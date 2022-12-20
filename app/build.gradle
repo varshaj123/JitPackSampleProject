@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
 
 }
-
+apply plugin: 'maven-publish'
 android {
     namespace 'com.reactsample.jitpacksampleproject'
     compileSdk 32
@@ -28,6 +28,23 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'org.airbook'
+            artifactId = 'SampleLibrary'
+            version = "1.0.0"
+
+            pom {
+                description = 'A description of my library'
+
+            }
+        }
+    }
+}
+
+
+
 
 dependencies {
 
