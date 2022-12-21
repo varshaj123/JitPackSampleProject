@@ -31,8 +31,8 @@ android {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'org.airbook'
-            artifactId = 'SampleLibrary'
+            groupId = 'com.github.varshaj123'
+            artifactId = 'JitPackSampleProject'
             version = "1.0.2"
 
             pom {
