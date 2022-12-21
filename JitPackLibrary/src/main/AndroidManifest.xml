@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".MainActivity"
+            android:name=".JitPackMainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
